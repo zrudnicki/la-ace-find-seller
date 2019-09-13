@@ -41,4 +41,9 @@ cd ../../ads/cloud
 bash setup.sh
 bash deploy.sh
 
+echo --  Setup the cloud function app that listens to pubsub and handles image processing.  {time: $(date)}
+cd ../../image_parser/deploy
+bash deploy.sh
+
 echo ---- Stop time $(date)
+
